@@ -14,9 +14,9 @@ const PrivateRoute = ({
             {...rest}
             render={routeProps => 
                 isAuthorized ? (
-                    <Redirect to={LoginForm} />
-                ) : (
                     <RouteComponent {...routeProps} />
+                ) : (  
+                    <Redirect to={LoginForm} />
                 )
             }
         />

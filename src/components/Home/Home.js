@@ -7,7 +7,11 @@ import styles from './Home.module.css';
 
 const Home = () => {
     return (
-        <div className={styles.container}>Hello world!</div>
+        <>
+            <div className={styles.container}>
+                <p className="t-greeting">Приветствуем в почтовом клиенте!</p>
+            </div>
+        </>
     )
 }
 

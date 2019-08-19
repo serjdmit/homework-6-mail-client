@@ -18,7 +18,7 @@ export const LoginForm = props => {
         props.authorize(email, password);
     };
 
-    return (
+    return props.isAuthorized ? (<Redirect to="/app" />) : (
         <div className={styles.bg}>
             <form className={`t-form ${styles.form}`}>
                 <p>
